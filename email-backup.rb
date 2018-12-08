@@ -42,7 +42,7 @@ class EmailBackup < Formula
         <string>launchctl</string>
 
         <key>PATH</key>
-        <string>/bin:/usr/local/bin</string>
+        <string>/bin:/usr/bin:/usr/local/bin</string>
       </dict>
     </dict>
     </plist>
