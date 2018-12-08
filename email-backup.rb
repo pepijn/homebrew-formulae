@@ -24,7 +24,7 @@ class EmailBackup < Formula
 
       <key>ProgramArguments</key>
       <array>
-        <string>/Users/pepijn/dev/run-with-log/run-with-log</string>
+        <string>run-with-log</string>
         <string>#{opt_bin}/#{name}</string>
         <string>#{var}/#{name}</string>
       </array>
