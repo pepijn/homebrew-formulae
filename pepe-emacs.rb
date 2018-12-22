@@ -32,9 +32,9 @@ EOS
         <string>--fg-daemon</string>
       </array>
       <key>StandardOutPath</key>
-      <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.log</string>
+      <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.stdout.log</string>
       <key>StandardErrorPath</key>
-      <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.log</string>
+      <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.stderr.log</string>
 
       <key>EnvironmentVariables</key>
       <dict>
