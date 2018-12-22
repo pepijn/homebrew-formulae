@@ -18,6 +18,7 @@ class Intranet < Formula
 
       <key>ProgramArguments</key>
       <array>
+        <string>/usr/local/bin/run-with-log</string>
         <string>/usr/local/bin/intranet</string>
         <string>#{var}/#{name}</string>
       </array>
