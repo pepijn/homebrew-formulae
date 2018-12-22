@@ -6,7 +6,12 @@ class PepeEmacs < Formula
 #!/usr/bin/env bash
 set -euo pipefail
 
-exec emacsclient --no-wait --create-frame --alternate-editor=/dev/null "$@"
+if emacsclient -e "(frames-on-display-list)" --alternate-editor=/dev/null | grep -q F1
+then
+    exec emacsclient --no-wait --create-frame --alternate-editor=/dev/null "$@"
+else
+    exec emacsclient --no-wait --alternate-editor=/dev/null "$@"
+fi
 EOS
                                                     )
     }
