@@ -1,6 +1,8 @@
 class Intranet < Formula
   head "https://github.com/pepijn/pepijn.github.io.git"
 
+  depends_on "rbenv"
+
   def install
     bin.install "bin/intranet"
   end
