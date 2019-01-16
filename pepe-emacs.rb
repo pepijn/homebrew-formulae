@@ -1,5 +1,8 @@
 class PepeEmacs < Formula
   head "https://github.com/pepijn/homebrew-formulae.git"
+  
+  depends_on cask: 'emacs'
+  depends_on 'run-with-log'
 
   def install
     File.open('pepe-emacs', 'w') { |file| file.write(<<~EOS
