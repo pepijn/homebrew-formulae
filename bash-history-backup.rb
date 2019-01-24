@@ -1,5 +1,5 @@
 class BashHistoryBackup < Formula
-  head "https://github.com/pepijn/#{name}.git"
+  head "https://github.com/pepijn/bash-history-backup.git"
 
   def install
     bin.install "bin/#{name}"
