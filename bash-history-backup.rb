@@ -28,7 +28,7 @@ class BashHistoryBackup < Formula
       <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.log</string>
 
       <key>StartInterval</key>
-      <integer>60</integer><!-- seconds -->
+      <integer>600</integer><!-- seconds -->
 
       <key>EnvironmentVariables</key>
       <dict>
