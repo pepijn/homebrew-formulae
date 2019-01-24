@@ -1,8 +1,8 @@
 class BashHistoryBackup < Formula
-  head "https://github.com/pepijn/bash-history-backup.git"
+  head "https://github.com/pepijn/#{name}.git"
 
   def install
-    bin.install "bin/bash-history-backup"
+    bin.install "bin/#{name}"
   end
 
   def plist; <<~EOS
