@@ -36,7 +36,7 @@ class BashHistoryBackup < Formula
         <string>launchctl</string>
 
         <key>PATH</key>
-        <string>/bin:/usr/bin:/usr/local/bin</string>
+        <string>/bin:/usr/bin:/usr/local/bin:/usr/sbin</string>
       </dict>
     </dict>
     </plist>
