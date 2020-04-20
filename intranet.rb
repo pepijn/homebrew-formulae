@@ -4,7 +4,7 @@ class Intranet < Formula
   depends_on "ruby"
 
   def install
-    bin.install "bin/intranet"
+    bin.install "_bin/intranet"
   end
 
   def plist; <<~EOS
