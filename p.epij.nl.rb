@@ -1,10 +1,10 @@
-class Intranet < Formula
+class PEpijNl < Formula
   head "https://github.com/pepijn/pepijn.github.io.git"
 
   depends_on "ruby"
 
   def install
-    bin.install "_bin/intranet"
+    bin.install "_bin/p.epij.nl"
   end
 
   def plist; <<~EOS
@@ -21,8 +21,8 @@ class Intranet < Formula
       <key>ProgramArguments</key>
       <array>
         <string>/usr/local/bin/run-with-log</string>
-        <string>/usr/local/bin/intranet</string>
-        <string>#{var}/#{name}</string>
+        <string>/usr/local/bin/p.epij.nl</string>
+        <string>/Users/#{ENV['USER']}/dev/personal/#{name}</string>
       </array>
       <key>StandardOutPath</key>
       <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.stdout.log</string>
@@ -33,9 +33,6 @@ class Intranet < Formula
       <dict>
         <key>LANG</key>
         <string>en_US.UTF-8</string>
-
-        <key>PEPE_AUTOMATIC</key>
-        <string>launchctl</string>
 
         <key>PATH</key>
         <string>/bin:/usr/bin:/usr/local/bin</string>
