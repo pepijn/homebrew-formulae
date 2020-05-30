@@ -1,7 +1,7 @@
 class PEpijNl < Formula
   head "https://github.com/pepijn/pepijn.github.io.git"
 
-  depends_on "ruby"
+  depends_on "rbenv"
 
   def install
     bin.install "_bin/p.epij.nl"
