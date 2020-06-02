@@ -26,7 +26,7 @@ class EmailBackup < Formula
       <array>
         <string>/usr/local/bin/run-with-log</string>
         <string>#{opt_bin}/#{name}</string>
-        <string>#{var}/#{name}</string>
+        <string>/Users/#{ENV['USER']}/Backups/#{name}</string>
       </array>
       <key>StandardOutPath</key>
       <string>/Users/#{ENV['USER']}/Library/Logs/#{name}.log</string>
